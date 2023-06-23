@@ -45,4 +45,8 @@ export default class User {
         venusYears = Math.round(100 * (this.earthYearsPassed() / .62)) / 100;
         return venusYears;
     }
+
+    marsYearsPassed() {
+
+    }
 }
