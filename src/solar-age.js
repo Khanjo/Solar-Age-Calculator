@@ -29,6 +29,8 @@ export default class User {
     }
 
     earthYearsPassed() {
-
+        let earthYears;
+        earthYears = this.age - this.previousAge;
+        return earthYears;
     }
 }
