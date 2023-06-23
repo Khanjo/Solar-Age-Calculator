@@ -7,17 +7,17 @@ export default class User {
     }
 
     ageOnMercury() {
-        this.mercuryAge = Math.round(100 * (this.age / .24)) / 100;
+        this.mercuryAge = Math.floor(this.age / .24);
         return this.mercuryAge;
     }
 
     ageOnVenus() {
-        this.venusAge = Math.round(100 * (this.age / .62)) / 100;
+        this.venusAge = Math.floor(this.age / .62);
         return this.venusAge;
     }
 
     ageOnMars() {
-        this.marsAge = Math.round(100 * (this.age / 1.88)) / 100;
+        this.marsAge = Math.floor(this.age / 1.88);
         return this.marsAge;
     }
 }
