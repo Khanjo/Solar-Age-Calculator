@@ -3,6 +3,7 @@ export default class User {
         this.age = age;
         this.mercuryAge = 0;
         this.venusAge = 0;
+        this.marsAge = 0;
     }
 
     ageOnMercury() {
@@ -13,5 +14,9 @@ export default class User {
     ageOnVenus() {
         this.venusAge = Math.round(100 * (this.age / .62)) / 100;
         return this.venusAge;
+    }
+
+    ageOnMars() {
+
     }
 }
