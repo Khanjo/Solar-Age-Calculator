@@ -60,6 +60,7 @@ export default class User {
     }
 
     mercuryYearsUntil() {
-
+        let mercuryYears = Math.round(100 * (this.earthYearsUntil() / .24)) / 100;
+        return mercuryYears;
     }
 }
