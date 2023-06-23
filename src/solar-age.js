@@ -73,4 +73,8 @@ export default class User {
         let marsYears = Math.round(100 * (this.earthYearsUntil() / 1.88)) / 100;
         return marsYears;
     }
+
+    jupiterYearsUntil() {
+
+    }
 }
