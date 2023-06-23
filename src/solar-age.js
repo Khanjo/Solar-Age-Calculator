@@ -17,6 +17,7 @@ export default class User {
     }
 
     ageOnMars() {
-
+        this.marsAge = Math.round(100 * (this.age / 1.88)) / 100;
+        return this.marsAge;
     }
 }
