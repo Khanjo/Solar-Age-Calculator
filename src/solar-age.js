@@ -55,6 +55,7 @@ export default class User {
     }
 
     earthYearsUntil() {
-
+        let earthYears = this.futureAge - this.age;
+        return earthYears;
     }
 }
