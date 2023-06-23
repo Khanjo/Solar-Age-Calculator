@@ -34,4 +34,8 @@ describe('AgeCalculator', () => {
     test('should return how many years have passed on Earth since a specified birthday', () => {
         expect(user.earthYearsPassed()).toEqual(13)
     });
+
+    test('should return how many years have passed on Mercury since a specified brithday', () => {
+        expect(user.mercuryYearsPassed()).toEqual(54.17)
+    });
 });

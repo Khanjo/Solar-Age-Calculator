@@ -33,4 +33,8 @@ export default class User {
         earthYears = this.age - this.previousAge;
         return earthYears;
     }
+
+    mercuryYearsPassed() {
+
+    }
 }
