@@ -2,6 +2,7 @@ import User from "../src/solar-age";
 
 describe('AgeCalculator', () => {
     let user;
+    let earthYears;
 
     beforeEach(() => {
         user = new User(33, 20);
@@ -32,22 +33,22 @@ describe('AgeCalculator', () => {
     });
 
     test('should return how many years have passed on Earth since a specified birthday', () => {
-        expect(user.earthYearsPassed()).toEqual(13)
+        expect(user.earthYearsPassed()).toEqual(13);
     });
 
     test('should return how many years have passed on Mercury since a specified brithday', () => {
-        expect(user.mercuryYearsPassed()).toEqual(54.17)
+        expect(user.mercuryYearsPassed()).toEqual(54.17);
     });
 
     test('should return how many years have passed on Venus since a specified brithday', () => {
-        expect(user.venusYearsPassed()).toEqual(20.97)
+        expect(user.venusYearsPassed()).toEqual(20.97);
     });
 
     test('should return how many years have passed on Mars since a specified brithday', () => {
-        expect(user.marsYearsPassed()).toEqual(6.91)
+        expect(user.marsYearsPassed()).toEqual(6.91);
     });
 
     test('should return how many years have passed on Jupiter since a specified brithday', () => {
-        expect(user.jupiterYearsPassed()).toEqual(1.1)
+        expect(user.jupiterYearsPassed()).toEqual(1.1);
     });
 });

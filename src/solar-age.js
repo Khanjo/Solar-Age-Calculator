@@ -29,32 +29,27 @@ export default class User {
     }
 
     earthYearsPassed() {
-        let earthYears;
-        earthYears = this.age - this.previousAge;
+        let earthYears = this.age - this.previousAge;
         return earthYears;
     }
 
     mercuryYearsPassed() {
-        let mercuryYears;
-        mercuryYears = Math.round(100 * (this.earthYearsPassed() / .24)) / 100;
+        let mercuryYears = Math.round(100 * (this.earthYearsPassed() / .24)) / 100;
         return mercuryYears;
     }
 
     venusYearsPassed() {
-        let venusYears;
-        venusYears = Math.round(100 * (this.earthYearsPassed() / .62)) / 100;
+        let venusYears = Math.round(100 * (this.earthYearsPassed() / .62)) / 100;
         return venusYears;
     }
 
     marsYearsPassed() {
-        let marsYears;
-        marsYears = Math.round(100 * (this.earthYearsPassed() / 1.88)) / 100;
+        let marsYears = Math.round(100 * (this.earthYearsPassed() / 1.88)) / 100;
         return marsYears;
     }
 
     jupiterYearsPassed() {
-        let jupiterYears;
-        jupiterYears = Math.round(100 * (this.earthYearsPassed() / 11.86)) / 100;
+        let jupiterYears = Math.round(100 * (this.earthYearsPassed() / 11.86)) / 100;
         return jupiterYears;
     }
 }
