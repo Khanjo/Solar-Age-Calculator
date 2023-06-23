@@ -53,10 +53,14 @@ describe('AgeCalculator', () => {
     });
 
     test('should return how many years will pass on Earth until a specified birthday', () => {
-        expect(user.earthYearsUntil()).toEqual(12)
+        expect(user.earthYearsUntil()).toEqual(12);
     });
 
     test('should return how many years will pass on Mercury until a specified birthday', () => {
-        expect(user.mercuryYearsUntil()).toEqual(50)
+        expect(user.mercuryYearsUntil()).toEqual(50);
+    });
+
+    test('should return how many years will pass on Venus until a specified birthday', () => {
+        expect(user.venusYearsUntil()).toEqual(19.35);
     });
 });
