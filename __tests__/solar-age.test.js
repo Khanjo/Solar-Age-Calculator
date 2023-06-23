@@ -5,7 +5,7 @@ describe('AgeCalculator', () => {
     let earthYears;
 
     beforeEach(() => {
-        user = new User(33, 20);
+        user = new User(33, 20, 45);
     });
 
     test('should create a User object with a userAge property', () => {
@@ -36,19 +36,23 @@ describe('AgeCalculator', () => {
         expect(user.earthYearsPassed()).toEqual(13);
     });
 
-    test('should return how many years have passed on Mercury since a specified brithday', () => {
+    test('should return how many years have passed on Mercury since a specified birthday', () => {
         expect(user.mercuryYearsPassed()).toEqual(54.17);
     });
 
-    test('should return how many years have passed on Venus since a specified brithday', () => {
+    test('should return how many years have passed on Venus since a specified birthday', () => {
         expect(user.venusYearsPassed()).toEqual(20.97);
     });
 
-    test('should return how many years have passed on Mars since a specified brithday', () => {
+    test('should return how many years have passed on Mars since a specified birthday', () => {
         expect(user.marsYearsPassed()).toEqual(6.91);
     });
 
-    test('should return how many years have passed on Jupiter since a specified brithday', () => {
+    test('should return how many years have passed on Jupiter since a specified birthday', () => {
         expect(user.jupiterYearsPassed()).toEqual(1.1);
+    });
+
+    test('should return how many years will pass on Earth until a specified birthday', () => {
+        expect(user.earthYearsUntil()).toEqual(12)
     });
 });
