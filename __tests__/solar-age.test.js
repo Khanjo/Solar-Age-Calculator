@@ -4,7 +4,7 @@ describe('AgeCalculator', () => {
     let user;
 
     beforeEach(() => {
-        user = new User(33);
+        user = new User(33, 20);
     });
 
     test('should create a User object with a userAge property', () => {
@@ -29,5 +29,9 @@ describe('AgeCalculator', () => {
     test('should return users age on Jupiter', () => {
         expect(user.ageOnJupiter()).toEqual(2);
         expect(user.jupiterAge).toEqual(2);
+    });
+
+    test('should return how many years have passed on Earth since a specified birthday', () => {
+        expect(user.earthYearsPassed()).toEqual(13)
     });
 });

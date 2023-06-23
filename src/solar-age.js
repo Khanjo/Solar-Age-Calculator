@@ -1,10 +1,11 @@
 export default class User {
-    constructor(age) {
+    constructor(age, previousAge) {
         this.age = age;
         this.mercuryAge = 0;
         this.venusAge = 0;
         this.marsAge = 0;
         this.jupiterAge = 0;
+        this.previousAge = previousAge;
     }
 
     ageOnMercury() {
@@ -25,5 +26,9 @@ export default class User {
     ageOnJupiter() {
         this.jupiterAge = Math.floor(this.age / 11.86);
         return this.jupiterAge;
+    }
+
+    earthYearsPassed() {
+
     }
 }
