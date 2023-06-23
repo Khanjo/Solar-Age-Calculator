@@ -4,6 +4,7 @@ export default class User {
         this.mercuryAge = 0;
         this.venusAge = 0;
         this.marsAge = 0;
+        this.jupiterAge = 0;
     }
 
     ageOnMercury() {
@@ -19,5 +20,9 @@ export default class User {
     ageOnMars() {
         this.marsAge = Math.floor(this.age / 1.88);
         return this.marsAge;
+    }
+
+    ageOnJupiter() {
+
     }
 }
