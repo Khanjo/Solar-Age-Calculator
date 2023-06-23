@@ -35,6 +35,8 @@ export default class User {
     }
 
     mercuryYearsPassed() {
-
+        let mercuryYears;
+        mercuryYears = Math.round(100 * (this.earthYearsPassed() / .24)) / 100;
+        return mercuryYears;
     }
 }
