@@ -9,4 +9,8 @@ export default class User {
         this.mercuryAge = this.age / .24;
         return this.mercuryAge;
     }
+
+    ageOnVenus() {
+
+    }
 }
