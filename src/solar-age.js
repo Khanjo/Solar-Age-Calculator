@@ -23,6 +23,7 @@ export default class User {
     }
 
     ageOnJupiter() {
-
+        this.jupiterAge = Math.floor(this.age / 11.86);
+        return this.jupiterAge;
     }
 }
