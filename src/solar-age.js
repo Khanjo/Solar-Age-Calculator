@@ -58,4 +58,8 @@ export default class User {
         let earthYears = this.futureAge - this.age;
         return earthYears;
     }
+
+    mercuryYearsUntil() {
+
+    }
 }
