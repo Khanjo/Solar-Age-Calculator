@@ -75,6 +75,7 @@ export default class User {
     }
 
     jupiterYearsUntil() {
-
+        let jupiterYears = Math.round(100 * (this.earthYearsUntil() / 11.86)) / 100;
+        return jupiterYears;
     }
 }
