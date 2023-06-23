@@ -46,4 +46,8 @@ describe('AgeCalculator', () => {
     test('should return how many years have passed on Mars since a specified brithday', () => {
         expect(user.marsYearsPassed()).toEqual(6.91)
     });
+
+    test('should return how many years have passed on Jupiter since a specified brithday', () => {
+        expect(user.jupiterYearsPassed()).toEqual(1.1)
+    });
 });

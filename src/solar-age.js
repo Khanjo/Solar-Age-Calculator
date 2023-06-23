@@ -51,4 +51,8 @@ export default class User {
         marsYears = Math.round(100 * (this.earthYearsPassed() / 1.88)) / 100;
         return marsYears;
     }
+
+    jupiterYearsPassed() {
+
+    }
 }
