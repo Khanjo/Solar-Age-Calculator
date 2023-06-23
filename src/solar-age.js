@@ -53,6 +53,8 @@ export default class User {
     }
 
     jupiterYearsPassed() {
-
+        let jupiterYears;
+        jupiterYears = Math.round(100 * (this.earthYearsPassed() / 11.86)) / 100;
+        return jupiterYears;
     }
 }
