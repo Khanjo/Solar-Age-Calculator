@@ -39,4 +39,8 @@ export default class User {
         mercuryYears = Math.round(100 * (this.earthYearsPassed() / .24)) / 100;
         return mercuryYears;
     }
+
+    venusYearsPassed() {
+
+    }
 }

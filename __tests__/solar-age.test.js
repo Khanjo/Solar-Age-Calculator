@@ -38,4 +38,8 @@ describe('AgeCalculator', () => {
     test('should return how many years have passed on Mercury since a specified brithday', () => {
         expect(user.mercuryYearsPassed()).toEqual(54.17)
     });
+
+    test('should return how many years have passed on Venus since a specified brithday', () => {
+        expect(user.venusYearsPassed()).toEqual(20.97)
+    });
 });
