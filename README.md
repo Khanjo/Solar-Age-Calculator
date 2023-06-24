@@ -2,7 +2,7 @@
 
 #### Converts earth years to years for other planets
 
-#### _By Joshua Khan_ 6/23/2023 
+#### _By **Joshua Khan**, 6/23/2023_
 
 ## Description
 Will take user inputted age and convert it to solar years for other planets
